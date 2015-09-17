@@ -131,16 +131,36 @@
 }
 
 .navigation {
-	overflow: hidden;
-	margin: 0 0 $vertical-rhythm;
-	.next {
-		float: left;
-		max-width: 50%;
+	position: relative;
+	vertical-align: middle;
+
+	.screen-reader-text {
+		position: absolute;
+		left: -99999px;
 	}
+	margin: 0 0 $vertical-rhythm;
+
+	.page-numbers {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 .4em;
+		@include media('<tablet') {
+			padding:0;
+		}
+	}
+
+	.next,
 	.prev {
-		float: right;
+		display: inline-block;
+		vertical-align: middle;
 		max-width: 50%;
-		text-align: right;
+		background: $btn-background;
+		color: $btn-color;
+		padding: .4em;
+		text-decoration: none;
+		@include media('<tablet') {
+			padding:.2em;
+		}
 	}
 }
 
