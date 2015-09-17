@@ -212,10 +212,18 @@
 	<strong>Superscript Tag</strong>
 	<p>Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.</p>
 	<!-- pagination -->
-	<div class="navigation">
-		<div class="next"><a href="#" >&laquo; Older Comments</a></div>
-		<div class="prev"><a href="#" >Newer Comments &raquo;</a></div>
-	</div>
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links">
+			<a class="prev page-numbers" href="http://siteurl">Previous page</a>
+			<a class="page-numbers" href="http://siteurl">1</a>
+			<span class="page-numbers current">2</span>
+			<span class="page-numbers dots">&hellip;</span>
+			<a class="page-numbers" href="http://siteurl/page/3/">3</a>
+			<a class="page-numbers" href="http://siteurl/page/4/">4</a>
+			<a class="next page-numbers" href="http://siteurl/page/3/">Next page</a>
+		</div>
+	</nav>
 	<!-- Search Form -->
 	<form action="#" class="search-form" id="searchform" method="get" role="search">
 		<input id="s" name="s" type="search" placeholder="">
