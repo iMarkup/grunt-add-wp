@@ -166,9 +166,11 @@ textarea {
   }
 }
 
-.navigation {
+.navigation,
+.navigation-comments {
   position: relative;
   vertical-align: middle;
+  margin-bottom: $vertical-rhythm;
 
   .screen-reader-text {
     position: absolute;
@@ -197,6 +199,31 @@ textarea {
     @include media('<tablet') {
       padding:.2em;
     }
+  }
+}
+
+.navigation-single{
+  @extend %clearfix;
+  margin-bottom: $vertical-rhythm;
+  .next,
+  .prev {
+    float: left;
+    vertical-align: middle;
+    max-width: 50%;
+    background: $btn-background;
+    color: $btn-color;
+    padding: .4em;
+    text-decoration: none;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    @include media('<tablet') {
+      padding:.2em;
+    }
+  }
+  .next {
+    float: right;
   }
 }
 
@@ -238,6 +265,7 @@ img.aligncenter {
   margin-bottom: 1.2em;
 }
 
+.wp-caption-text,
 .gallery,
 .alignnone,
 .gallery-caption,
