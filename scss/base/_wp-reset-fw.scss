@@ -180,7 +180,6 @@ textarea {
     position: absolute;
     left: -99999px;
   }
-  margin: 0 0 $vertical-rhythm;
 
   .page-numbers {
     display: inline-block;
@@ -216,11 +215,12 @@ textarea {
     max-width: 50%;
     background: $btn-background;
     color: $btn-color;
-    padding: .4em;
     text-decoration: none;
     a {
       color: inherit;
       text-decoration: none;
+      padding: .4em;
+      display: block;
     }
     @include media('<tablet') {
       padding:.2em;
