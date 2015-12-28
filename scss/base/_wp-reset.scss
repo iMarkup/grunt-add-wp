@@ -181,9 +181,9 @@
 			text-decoration: none;
 			padding: .4em;
 			display: block;
-		}
-		@include media('<tablet') {
-			padding:.2em;
+			@include media('<tablet') {
+				padding:.2em;
+			}
 		}
 	}
 	.next {
