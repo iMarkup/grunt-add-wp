@@ -14,7 +14,11 @@
 // #sidebar { 
 // 	float: right;
 // 	width: 25%;
+// 	#wp-calendar {
+// 		width:100%;
+// 	}
 // }
+
 
 .widget {
 	margin-bottom: $vertical-rhythm;
@@ -41,7 +45,8 @@
 	textarea,
 	input[type='text'] {
 		margin: 0 4px 0 0;
-		width: 300px;
+		max-width: 300px;
+		width:100%;
 	}
 	input[type='submit'] {
 		display: block;
@@ -56,7 +61,8 @@
 	}
 	input[type='password'] {
 		margin: 0 4px 0 0;
-		width: 300px;
+		max-width: 300px;
+		width:100%;
 	}
 }
 
@@ -160,7 +166,7 @@
 		vertical-align: middle;
 		padding: 0 .4em;
 		@include media('<tablet') {
-			padding:0;
+			padding:0 3px;
 		}
 	}
 
@@ -204,6 +210,7 @@
 			@include media('<tablet') {
 				padding:.2em;
 			}
+
 		}
 	}
 	.next {
@@ -256,4 +263,22 @@ img.aligncenter {
 .sticky,
 .bypostauthor {
 	height: auto;
+}
+
+iframe {
+	@include media("<desktop") {
+		width:100%;
+	}
+}
+
+#wp-calendar {
+	tbody {
+		td {
+			text-align:center;
+		}
+	}
+	td,
+	th {
+		border:1px solid $gray;
+	}
 }
